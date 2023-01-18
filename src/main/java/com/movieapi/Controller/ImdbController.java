@@ -18,7 +18,7 @@ public class ImdbController {
     @GetMapping("/top100movies")
     public ResponseEntity<String> getTop100Movies() {
         HttpHeaders headers = new HttpHeaders();
-        headers.set("X-RapidAPI-Key", "3fe421aa57mshdfd4147f4d4c319p1ba7f4jsnca7d59efce2d");
+        headers.set("X-RapidAPI-Key", "Your_Api_Key");
         headers.set("X-RapidAPI-Host", "imdb-top-100-movies.p.rapidapi.com");
 
         HttpEntity<String> entity = new HttpEntity<>("parameters", headers);
